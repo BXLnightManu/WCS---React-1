@@ -2,13 +2,13 @@ import React from "react"
 
 const Travel = props => (
     <div>
-        <h1>{props.destination}</h1>
-        <h2>{props.country}</h2>
+        <h2>{props.destination}</h2>
+        <h3>{props.country}</h3>
         <img
             src={props.image}
             alt={props.destination}
         />
-        <h3>{props.distance}</h3>
+        <p>{props.distance}</p>
     </div>
 );
 
