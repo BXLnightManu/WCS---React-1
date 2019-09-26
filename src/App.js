@@ -28,7 +28,7 @@ class App extends Component {
           />
         </div>
         <div>
-          <h2>Lakes to visit</h2>
+          <h1>Lakes to visit</h1>
           <TravelsGreatLakes />
         </div>
       </div>

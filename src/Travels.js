@@ -1,32 +1,33 @@
 import React from "react"
+import Travel from "./Travel"
 
 const travelsGreatLakes = [
     {
         "lakeName": "Lake Geneva",
-        "Country": "Switzerland"
+        "country": "Switzerland"
     },
     {
         "lakeName": "Lake Placid",
-        "Country": "United States"
+        "country": "United States"
     },
     {
         "lakeName": "Lake Kivu",
-        "Country": "Rwanda"
+        "country": "Rwanda"
     },
     {
         "lakeName": "Lake Victoria",
-        "Country": "Ouganda"
+        "country": "Ouganda"
     },
     {
         "lakeName": "Lake Michigan",
-        "Country": "United States"
+        "country": "United States"
     }
 ]
 
 const TravelsGreatLakes = () => (
     <div>
-        {travelsGreatLakes.map(lakes => (
-            <p>{lakes.lakeName}</p>
+        {travelsGreatLakes.map((lakes, i) => (
+            <Travel destination={lakes.lakeName} country={lakes.country} key={i} />
         ))}
     </div>
 );
